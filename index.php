@@ -49,7 +49,7 @@
   <textarea id="result" name="result" cols="60" rows="7" readonly onclick="document.xcampo.result.select();"></textarea>
   </fieldset>
 </form>
-<div id="credits">The <a href="">XCampo software</a> is developed by <a href="http://www.equilibrioinestable.com/">Pedro Laguna</a> at <a href="http://www.pentura.com/">Pentura</a></div>
+<div id="credits">Download <a href="http://code.google.com/p/xcampo/">XCampo</a> from Google Code.</div>
 </div>
 </body>
 </html>
