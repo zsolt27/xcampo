@@ -9,8 +9,8 @@ $quotes = $_GET['quotes'];
 $encode = $_GET['encode'];
 
 // Configuration of jQuery URLs
-$jQueryURL = "http://he7le.tk"; // http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
-$jQueryUIURL = "http://2x7if.tk"; // http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js
+$jQueryURL = "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"; // http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
+$jQueryUIURL = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"; // http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js
 
 
 switch ($payload)
