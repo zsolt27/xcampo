@@ -6,7 +6,7 @@ $result = "Error!";
 // General parameters for all the payloads
 $payload 	= $_GET['payload'];
 $quotes = $_GET['quotes'];
-$urlencode = $_GET['urlencode'];
+$encode = $_GET['encode'];
 
 // Configuration of jQuery URLs
 $jQueryURL = "http://he7le.tk"; // http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
@@ -46,7 +46,25 @@ switch ($payload)
 		break;
 }
 
-if(isset($urlencode))
-  echo rawurlencode($result);
+// Output the payload with the specified encode
+if(isset($encode))
+{
+  if($encode == "urlencode")
+  {
+    echo rawurlencode($result);
+  }
+  else if($encode == "hashencode")
+  {
+    echo hashencode($result);
+  }
+  else
+  {
+    echo $result;
+  }
+}
 else
+{
   echo $result;
+}
+
+?>
