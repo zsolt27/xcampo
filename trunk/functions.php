@@ -106,4 +106,10 @@ function sendWithPopup($url, $data, $quotes)
   $popup .= ");</script>";  
   return $popup;
 }
+
+// If the XSS is reflected we need to convert the hash simbol into the HTML equivalent
+function hashencode($originalString)
+{
+  return preg_replace("/#/", "%23", $originalString);
+}
 ?>

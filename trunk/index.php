@@ -40,7 +40,9 @@
   <br />
   <div id="generalOptions">
   <fieldset><legend>General Options</legend>
-    <input type="checkbox" id="urlencode" name="tweaks" value="urlencode" /><label for="urlencode">Use rawurlencode()</label><br />
+    <input type="radio" id="noencode" name="encode" value="noencode" /><label for="noencode">No encode</label><br />
+    <input type="radio" id="urlencode" name="encode" value="urlencode" /><label for="urlencode">Use rawurlencode()</label><br />
+    <input type="radio" id="hashencode" name="encode" value="hashencode" /><label for="hashencode">Convert # to %23</label><br />
     <input type="checkbox" id="quotes" name="tweaks" value="quotes" /><label for="quotes">Don't use quotes</label><br />
    </fieldset>
    </div>
